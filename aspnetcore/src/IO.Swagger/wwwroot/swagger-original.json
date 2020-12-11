@@ -1,0 +1,43 @@
+{
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "OpenRoboticsUiPath",
+    "version" : "a"
+  },
+  "servers" : [ {
+    "url" : "/"
+  } ],
+  "tags" : [ {
+    "name" : "@baseclass"
+  }, {
+    "name" : "Connect UiPath Robot"
+  } ],
+  "paths" : {
+    "/job" : {
+      "post" : {
+        "tags" : [ "@baseclass" ],
+        "summary" : "process job events",
+        "responses" : {
+          "default" : {
+            "content" : { }
+          }
+        }
+      }
+    },
+    "/process" : {
+      "post" : {
+        "tags" : [ "Connect UiPath Robot" ],
+        "summary" : "pxProcessUiPathProcessEvents",
+        "responses" : {
+          "default" : {
+            "content" : { }
+          }
+        }
+      }
+    }
+  },
+  "components" : {
+    "schemas" : { }
+  },
+  "x-original-swagger-version" : null
+}
